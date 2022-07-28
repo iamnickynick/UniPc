@@ -1,0 +1,195 @@
+body{
+  background-image: url("bkg-5.jpg");
+  cursor: grab;
+  font-family: "Montserrat";
+}
+a{
+  text-decoration: none;
+}
+
+h3{
+  font-family: 'Montserrat';
+  font-weight: bolder;
+  font-size: 22px;
+}
+h5{
+  padding: 1rem;
+  border: 1px solid black ;
+}
+.head{
+  color: white;
+   background-image: url("bkg.jpg");
+}
+.name{
+  z-index: 1;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.collapse{
+  margin-left: 50rem;
+}
+.nav-item{
+  z-index: 1;
+  line-height: 2rem;
+  font-weight: bold;
+
+}
+/*    intro   */
+.intro-img{
+  width: 26rem;
+}
+.intro-name{
+  font-size: 4rem;
+  font-weight: 800;
+
+}
+.introCol{
+  width: 50rem;
+  padding:5rem 10rem 10rem;
+}
+/* Products released */
+.first-latest{
+  color: white;
+   background-image: url("bkg-2.jpg");
+    background-size: 1800px 1200px;
+}
+.second-latest{
+   background-image: url("bkg-3.jpg");
+    background-size: 1800px 1200px;
+}
+.third-latest{
+   background-image: url("bkg-4.jpg");
+    background-size: 1600px 1000px;
+}
+.discription{
+  width:20rem;
+}
+.disc-2{
+  position: relative;
+  left:38rem;
+}
+.latest{
+  margin-bottom: 4rem;
+}
+.r{
+padding:3rem;
+padding-bottom: 3rem;
+}
+.lp-btn
+{
+  text-align: center;
+  padding: 0.5rem 2.5rem;
+  font-size: 20px;
+  margin-left: 3rem;
+  margin-top: 2rem;
+}
+
+/* product */
+.products{
+  background-image: url("bkg-5.jpg");
+   background-size: 1800px 1200px;
+   padding-top: 10rem;
+   padding-bottom: 10rem;
+}
+.products-title{
+  padding-left: 32rem;
+  padding-bottom: 4rem;
+  font-weight: bolder;
+}
+.products{
+  text-align: center;
+  width: 80rem;
+  display: flex;
+}
+.col-lg-4{
+  background: white;
+  width: 18rem;
+  margin: 0 1rem;
+}
+
+
+/* footer */
+
+footer {
+  background-image: url("footer-img.jpg");
+   background-size: 1400px 900px;
+  padding: 5rem;
+}
+.footer-det{
+  color: black;
+  font-weight: bold;
+}
+/* cursor */
+#cursor{
+  height: 50px;
+  width: 50px;
+  background-color:#e7c82f;
+  position : absolute;
+  border-radius: 50%;
+  display: none;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+div:hover~#cursor{
+  transform: scale(0.5);
+}
+
+/*buttons */
+#product-btn{
+  z-index: 2;
+  margin: 3rem auto 3rem 33rem;
+}
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+
+.glow-on-hover:active {
+    color: white;
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    left: 0;
+    top: 0;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
